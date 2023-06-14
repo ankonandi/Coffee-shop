@@ -34,7 +34,8 @@
 
     <div class="brand">Coffee Shop</div>
     <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
-
+    <!--Navigation -->
+    <?php require_once 'nav.php'; ?>
     <div class="container">
 
         <div class="row">
