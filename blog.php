@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog - Business Casual - Start Bootstrap Theme</title>
+    <title>Coffee Shop</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,44 +32,11 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="brand">Coffee Shop</div>
+    <div class="address-bar">Coffee Town</div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <?php require_once 'nav.php'; ?>
 
     <div class="container">
 
@@ -77,39 +44,39 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Company
-                        <strong>blog</strong>
+                    <h2 class="intro-text text-center">
+                        <strong>Coffee Shop</strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
                     <img class="img-responsive img-border img-full" src="img/slide-1.jpg" alt="">
-                    <h2>Post Title
+                    <h2>Cappuccino
                         <br>
-                        <small>October 13, 2013</small>
+                        <small>June 13, 2023</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    <p>Cappuccino, a classic Italian favorite, combines the rich taste of espresso with creamy steamed milk and a frothy layer of foam, creating a harmonious balance of flavors and textures. Savor the smoothness of the milk, the boldness of the coffee, and the artistry of the intricate foam design atop this beloved and indulgent beverage.</p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Read More</button>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
                     <img class="img-responsive img-border img-full" src="img/slide-2.jpg" alt="">
-                    <h2>Post Title
+                    <h2>espresso shot
                         <br>
-                        <small>October 13, 2013</small>
+                        <small>June 10, 2023</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    <p>An espresso shot is a concentrated burst of caffeinated bliss, packing a robust flavor and a velvety texture in just a few sips. Its bold intensity and aromatic notes make it the perfect pick-me-up for those seeking a quick, flavorful jolt of energy.</p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Read More</button>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
                     <img class="img-responsive img-border img-full" src="img/slide-3.jpg" alt="">
-                    <h2>Post Title
+                    <h2>Fresh coffee beans
                         <br>
-                        <small>October 13, 2013</small>
+                        <small>June 8, 2023</small>
                     </h2>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    <a href="#" class="btn btn-default btn-lg">Read More</a>
+                    <p>Fresh coffee beans are a sensory delight, with their enticing aroma and vibrant appearance. These beans, carefully sourced from around the world, hold the potential to unlock a world of flavors. When expertly roasted and ground just before brewing, they release a symphony of tastes, from delicate floral notes to deep, earthy undertones, delivering a truly exceptional cup of coffee that captures the essence of its origin.</p>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Read More</button>
                     <hr>
                 </div>
                 <div class="col-lg-12 text-center">
@@ -125,12 +92,74 @@
 
     </div>
     <!-- /.container -->
+	<!-- Modal 1 -->
+	<div id="myModal1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
 
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Cappuccino</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Sample Text.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+	
+	<!-- Modal 2 -->
+	<div id="myModal2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">espresso shot</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Sample Text.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+	
+	<!-- Modal 3 -->
+	<div id="myModal3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Fresh coffee beans</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Sample Text.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+	
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Coffee Shop 2023</p>
                 </div>
             </div>
         </div>
